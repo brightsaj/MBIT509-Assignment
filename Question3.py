@@ -1,39 +1,26 @@
-import math
-
-# Base class
 class Shape:
-    def area(self):
-        raise NotImplementedError("Subclasses should implement this method")
+    def __init__(self):
+        # Initialization logic for the Shape class
+        print("Shape initialized")
 
-# Circle subclass
-class Circle(Shape):
-    def __init__(self, radius):
-        self.radius = radius
+    def calculate_area(self):
+        # Base class method that does nothing
+        pass
 
-    def area(self):
-        return math.pi * self.radius ** 2
-
-# Rectangle subclass
 class Rectangle(Shape):
     def __init__(self, width, height):
+        # Call the Shape class's constructor using super()
+        super().__init__()
         self.width = width
         self.height = height
 
-    def area(self):
-        return self.width * self.height
-
-# Function to calculate total area of a list of shapes
-def total_area(shapes):
-    return sum(shape.area() for shape in shapes)
+    def calculate_area(self):
+        # Implement the calculate_area method for Rectangle
+        area = self.width * self.height
+        print(f"Area of the rectangle: {area}")
+        # Optionally, call the base class's calculate_area method if needed
+        super().calculate_area()
 
 # Example usage
-if __name__ == "__main__":
-    shapes = [
-        Circle(5),
-        Rectangle(4, 6),
-        Circle(3),
-        Rectangle(2, 3)
-    ]
-
-    total = total_area(shapes)
-    print(f"Total area of all shapes: {total}")
+rectangle = Rectangle(5, 10)
+rectangle.calculate_area()
