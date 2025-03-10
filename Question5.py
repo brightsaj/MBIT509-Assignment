@@ -37,12 +37,12 @@ class BinaryFileHandler(FileHandler):
             file.write(data)
 
 
-# Example usage
+# Demontration
 if __name__ == "__main__":
     # Text file handling
     text_handler = TextFileHandler()
-    text_handler.write("example.txt", "Hello, this is a text file.")
-    print(text_handler.read("example.txt"))  # Output: Hello, this is a text file.
+    text_handler.write("file.pdf", "You are opening a read only PDF file.")
+    print(text_handler.read("file.pdf"))  # Output: You are opening a read only PDF file.
 
     # Binary file handling
     binary_handler = BinaryFileHandler()
