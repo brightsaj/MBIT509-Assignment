@@ -21,6 +21,6 @@ class Rectangle(Shape):
         # Optionally, call the base class's calculate_area method if needed
         super().calculate_area()
 
-# Example usage
-rectangle = Rectangle(5, 10)
+# Demonstration
+rectangle = Rectangle(6, 10)
 rectangle.calculate_area()
