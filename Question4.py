@@ -1,12 +1,12 @@
 # Define the Dog class
 class Dog:
     def make_sound(self):
-        return "Woof!"
+        return "Woof!!!"
 
 # Define the Cat class
 class Cat:
     def make_sound(self):
-        return "Meow!"
+        return "Meow!!!"
 
 # Define the process_sound function
 def process_sound(sound_object):
