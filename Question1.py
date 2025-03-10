@@ -1,4 +1,4 @@
-# Base class
+# Base class Vehicle
 class Vehicle:
     def __init__(self, brand, model):
         self.brand = brand
@@ -23,9 +23,9 @@ class Bike(Vehicle):
         self.bike_type = bike_type
 
     def drive(self):
-        return f"Riding a {self.brand} {self.model} {self.bike_type} bike."
+        return f"Riding a {self.brand} {self.model} {self.bike_type} Bike."
 
 # Example usage
 print(Vehicle("Generic", "Vehicle").drive())  # Output: Driving a generic Generic Vehicle.
-print(Car("Toyota", "Corolla", 4).drive())    # Output: Driving a Toyota Corolla car with 4 doors.
-print(Bike("Trek", "Mountain", "Mountain").drive())  # Output: Riding a Trek Mountain Mountain bike.
+print(Car("Toyota", "Landcruiser", 4).drive())    # Output: Driving a Toyota Landcruiser car with 4 doors.
+print(Bike("Trek", "Premium", "Mountain").drive())  # Output: Riding a Trek Mountain Mountain bike.
