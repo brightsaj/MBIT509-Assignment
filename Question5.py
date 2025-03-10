@@ -37,7 +37,7 @@ class BinaryFileHandler(FileHandler):
             file.write(data)
 
 
-# Demontration
+# Demonstration
 if __name__ == "__main__":
     # Text file handling
     text_handler = TextFileHandler()
