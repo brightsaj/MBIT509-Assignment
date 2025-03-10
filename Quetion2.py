@@ -26,14 +26,14 @@ class Rectangle(Shape):
 def total_area(shapes):
     return sum(shape.area() for shape in shapes)
 
-# Example usage
+# Demonstration
 if __name__ == "__main__":
     shapes = [
-        Circle(5),
-        Rectangle(4, 6),
+        Circle(10),
+        Rectangle(5, 7),
         Circle(3),
         Rectangle(2, 3)
     ]
 
     total = total_area(shapes)
-    print(f"Total area of all shapes: {total}")
+    print(f"Total area of all shapes: {total} Square Metres")
